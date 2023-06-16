@@ -17,6 +17,15 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <TheHeader />
+        <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-HN8G5B01H4"></script>
+            <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+            
+              gtag('config', 'G-HN8G5B01H4');
+            </script>
         <main className="container">{children}</main> 
         <TheFooter />
        </body>
